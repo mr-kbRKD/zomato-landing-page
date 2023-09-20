@@ -47,22 +47,6 @@ display: none;
 }
 
 
-@media only screen and (max-width:600px) {
-  .navbar-menu-container .user-icon{
-    display: flex;
-  }
-  .link{
-    display:none;
-  }
-  .navbar{
-    padding: 16px;
-  }
-
-  .hero-section{
-    min-height: 80vh;
-  }
-  
-}
 
 
 .hero-section-container{
@@ -77,4 +61,74 @@ display: none;
 .hero-section-logo{
   /* whenever there is img to set don't set height only width will help */
   width: 200px;
+  height:auto
+}
+
+.hero-section-title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}  
+
+.hero-section-input-container{
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  width: 50%;
+  border-radius: 10px;
+
+}
+/* apply css on collective or 2 classes using comma */
+.input-container-location, .input-container-search{
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.input-container-location{
+  width:35%;
+  border-right : 2px solid #e0e0e0;
+}
+
+.input-container-search{
+  width:65%;
+}
+
+
+@media only screen and (max-width:600px) {
+  .navbar-menu-container .user-icon{
+    display: flex;
+  }
+  .link{
+    display:none;
+  }
+  .navbar{
+    padding: 16px;
+  }
+
+  .hero-section{
+    min-height: 80vh;
+  }
+ .hero-section-input-container{
+   flex-direction: column;
+   background-color: transparent;
+   width: 100%;
+  } 
+  .input-container-location, .input-container-search{
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+  }
+
+  .hero-section-container{
+    height: calc(80vh - 60px);
+  }
+
+  .hero-section-title{
+    font-size: 20px;
+    width: 95%;
+  }
 }
