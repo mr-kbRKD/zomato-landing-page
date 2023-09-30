@@ -132,3 +132,134 @@ display: none;
     width: 95%;
   }
 }
+
+
+.container{
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.we-offer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.we-offer-card{
+  /* background-color: aqua; */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.we-offer-card:hover{
+transform: scale(1.05);
+
+}
+
+
+.we-offer-card img{
+width: 100%;
+height: 160px;
+/* below both property apply for image like for background img */
+object-fit: cover;
+object-position: center;
+}
+
+.we-offer-content{
+  padding: 10px;
+}
+.we-offer-content h2{
+font-size: 20px;
+font-weight: 400;
+}
+.we-offer-content p{
+font-size: 15px;
+}
+
+/* new collection section */
+
+.collections h1{
+  font-weight: 600;
+}
+
+.collections .sub-heading-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 15px;
+  flex-wrap: wrap;
+}
+
+.sub-heading-container span:nth-child(2){
+  color: #ff7e8b;
+  font-size: 13px;
+  cursor:pointer;
+}
+
+.collections-card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.collections-card-container .card{
+  height:300px ;
+  min-width: 240px ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1{
+  background-image: url('images/collection1.jpg');
+}
+.card2{
+  background-image: url('images/collection2.jpg');
+}
+.card3{
+  background-image: url('images/collection3.jpg');
+}
+.card4{
+  background-image: url('images/collection4.jpg');
+}
+
+/* pending didn't work need to fix */
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0, 0.9) 0%,
+    rgba(0,0,0, 0.05) 50%,
+    rgba(0,0,0, 0.05) 85%,
+  );
+}
+
+
+
+.collections-card-container .card .content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  font-size: .9rem;
+}
+
+.content h4{
+  font-weight: 400;
+  letter-spacing: .5px;
+  
+}
