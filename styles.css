@@ -263,3 +263,289 @@ font-size: 15px;
   letter-spacing: .5px;
   
 }
+
+
+.get-my-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+
+.get-my-app .semicontainer{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.get-my-app .semicontainer .left{
+  /* giving ratio */
+  flex:2;
+}
+.get-my-app .semicontainer .left img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.get-my-app .semicontainer .right{
+  flex:3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right h1{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.right p{
+  font-size: 0.8rem;
+}
+
+.semicontainer .right .radio-button-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.semicontainer .right .radio-button-container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.right .radio-button-container div input{
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239,79,95);
+}
+
+.semicontainer .right .input-container{
+  display: flex;
+  gap: 0.5em;
+}
+
+.input-container{
+  flex-wrap: wrap;
+}
+.input-container button,
+.input-container input {
+  padding: 10px 12px;
+}
+
+.input-container input {
+  flex: auto;
+  border: 1.5px solid gray;
+  outline: none;
+  border-radius: 5px;
+  /* flex: auto; */
+}
+
+.input-container button{
+  border: none;
+  background-color: rgb(239,79,95);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.right .Download-app-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.right .Download-app-container h5{
+  font-weight: 400;
+  color: gray;
+}
+
+.Download-app-container div{
+  display: flex;
+  gap: 1rem;
+}
+.Download-app-container div img{
+  width: 35%;
+}
+
+
+
+
+@media only screen and (max-width:1300px){
+  .get-my-app .semicontainer .left,
+  .get-my-app .semicontainer .right{
+    flex:1;
+  }
+  
+  .get-my-app .semicontainer {
+    width: 80%;
+    /* flex-direction: column; */
+  }
+
+}
+@media only screen and (max-width:900px){
+  .get-my-app{
+    padding: 2rem;
+  }
+  
+  .get-my-app .semicontainer {
+    width: 90%;
+    /* flex-direction: column; */
+  }
+
+}
+
+@media only screen and (max-width:700px){
+  .get-my-app{
+    padding: 3rem 0;
+  }
+  
+  .get-my-app .semicontainer {
+    width: 80%;
+    flex-direction: column;
+  }
+
+}
+
+
+/* design footer section */
+
+.footer{
+  width: 100%;
+}
+
+.footer-section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer-section1 img{
+  width: 120px;
+}
+
+.section1-buttoncontainer{
+  display: flex;
+  gap: 1rem;
+}
+.section1-buttoncontainer button{
+padding: 5px 5px;
+width: 90px;
+border: 1px solid gray;
+background-color: transparent;
+border-radius: 5px;
+display: flex;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+}
+
+/* main grid starts */
+
+.navigation-container{
+  display: grid;
+  /* same for row */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* shortcut */
+  grid-template-columns:repeat(5, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.link-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.link-container h5{
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+
+
+.footer-link{
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer-link:hover{
+color: black;
+}
+
+.social-links-container{
+  display: flex;
+  gap: 0.5rem;
+  
+}
+.social-links-container button{
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+
+.social-links-container button i{
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer-section-logos{
+  width: 100%;
+}
+
+
+.disclaimer{
+  width: 90%;
+  margin: auto;
+  color: gray;
+  font-size: 12px;
+  border-top: 1px solid gray;
+  padding-top: 1.5rem;
+}
+
+
+@media only screen and (max-width:900px){
+  .navigation-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width:600px){
+  .navigation-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width:450px){
+  .navigation-container{
+    grid-template-columns: 1fr;
+  }
+}
