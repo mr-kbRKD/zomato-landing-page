@@ -328,6 +328,7 @@ font-size: 15px;
 .right .radio-button-container div input{
   height: 15px;
   width: 15px;
+  /* for the radio buttons */
   accent-color: rgb(239,79,95);
 }
 
@@ -519,8 +520,11 @@ color: black;
   cursor: pointer;
 }
 
-.footer-section-logos{
-  width: 100%;
+/* property is not working IDK why BUT inline style worked check the results*/
+.navigation-container .footer-section-logos{
+  width: 100px;
+  /* object-fit: cover;
+  object-position: center; */
 }
 
 
