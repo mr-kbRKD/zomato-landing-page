@@ -9,6 +9,13 @@ body {
   overflow-x: hidden;
 }
 
+.hero-section {
+  background: url(images/heroSectionBackground.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 60vh;
+}
 
 .hero-section {
   background: url(images/heroSectionBackground.png);
